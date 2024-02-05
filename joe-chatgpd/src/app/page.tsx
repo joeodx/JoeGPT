@@ -20,7 +20,7 @@ function page() {
       <div>
       <div className='flex flex-col items-center justify-center mb-5'>
       <SunIcon className='h-8 w-8' />
-<h2>Examples</h2>
+<h2>Exampless</h2>
 </div>
 
       <div className='space-y-2' >
