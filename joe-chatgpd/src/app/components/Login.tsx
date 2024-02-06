@@ -1,6 +1,5 @@
 'use client'
-
-import { signIn } from "next-auth/react";
+import { useSession, signIn, signOut } from "next-auth/react"
 import Image from "next/image";
  
 function Login() {
@@ -12,7 +11,9 @@ function Login() {
       height={400}
       alt="Picture of the author"
     /> 
-    <button>Sign  In  to  Use  JoeGPT</button>
+    <button 
+    onClick={() => signIn ('google')} className="text-white font-bold text-3xl animate-pulse">
+        Sign  In  to  Use  JoeGPT</button>
     </div>
   )
 }
