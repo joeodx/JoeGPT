@@ -1,12 +1,12 @@
 'use client'
-import { useSession, signIn, signOut } from "next-auth/react"
+import { signIn } from "next-auth/react"
 import Image from "next/image";
  
 function Login() {
   return (
     <div className=" bg-[#bea060] h-screen font-bold flex flex-col items-center justify-center text-center">
         <Image
-      src="/chat.png"
+      src="/image.png"
       width={400}
       height={400}
       alt="Picture of the author"
