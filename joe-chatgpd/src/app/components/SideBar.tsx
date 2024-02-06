@@ -1,4 +1,4 @@
-import NewChat from "./NewChat"
+import NewChat from "./NewChat";
 
 
 function SideBar() {

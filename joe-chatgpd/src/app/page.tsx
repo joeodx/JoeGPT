@@ -1,13 +1,13 @@
-import React from 'react'
-import { SunIcon } from '@heroicons/react/24/outline'
-import { BoltIcon } from '@heroicons/react/24/outline'
-import { ExclamationTriangleIcon } from '@heroicons/react/24/outline'
+import React from 'react';
+import { SunIcon } from '@heroicons/react/24/outline';
+import { BoltIcon } from '@heroicons/react/24/outline';
+import { ExclamationTriangleIcon } from '@heroicons/react/24/outline';
 
 // import Image from 'next/image'
 function page() {
   return (
     
-    <div className=" flex flex-col items-center justify-center h-screen px-2 text-white">
+    <div className=" flex flex-col items-center justify-center bg-gray h-screen px-2 text-white">
       <h1 className=" text-6xl font-bold mb-20">JoeGPT</h1>
       {/* <Image
       src="/image.png"

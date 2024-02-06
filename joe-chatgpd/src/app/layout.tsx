@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import SideBar from "../../components/SideBar";
+import SideBar from "./components/SideBar";
+import { SessionProvider } from "next-auth/react";
 
 export const metadata: Metadata = {
   title: "JoeGPT",
@@ -16,16 +17,17 @@ export default function RootLayout({
     <html>
       <head />
       <body>
-     <div className="flex">
-  {/* Sidebar */}
-  <SideBar />
+        < SessionProvider />
+       <div className="flex">
+        <div className="bg-[#bea060] max-w-xs h-screen overflow-y-auto md:min-w-[20rem}">
+        <SideBar />
+        </div>
 
   {/*ClientProvider - notification */}
 
-
-        <div className="bg-black flex-1">{children}</div>
-        </div>
-        </body>
-    </html>
-  );
+     <div className="bg-black flex-1">{children}</div>
+    </div>
+   </body>
+  </html>
+);
 }
